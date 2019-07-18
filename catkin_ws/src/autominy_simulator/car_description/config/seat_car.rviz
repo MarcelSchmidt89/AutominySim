@@ -1,0 +1,1415 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 80
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Odometry1/Shape1
+      Splitter Ratio: 0.72622478
+    Tree Height: 602
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.588679016
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: RP_Lidar
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.100000001
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.0299999993
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: -5
+        Z: 0.00999999978
+      Plane: XY
+      Plane Cell Count: 12
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        base_link:
+          Value: true
+        body:
+          Value: true
+        building1_body:
+          Value: true
+        building1_link:
+          Value: true
+        building2_body:
+          Value: true
+        building2_link:
+          Value: true
+        building3_body:
+          Value: true
+        building3_link:
+          Value: true
+        building4_body:
+          Value: true
+        building4_link:
+          Value: true
+        building5_body:
+          Value: true
+        building5_link:
+          Value: true
+        buildings_base_link:
+          Value: true
+        camera_board:
+          Value: true
+        camera_link:
+          Value: true
+        camera_rgb_optical_frame:
+          Value: true
+        ceiling_base_link:
+          Value: true
+        front_left_axel_link:
+          Value: true
+        front_left_wheel_link:
+          Value: true
+        front_right_axel_link:
+          Value: true
+        front_right_wheel_link:
+          Value: true
+        imu:
+          Value: true
+        laser:
+          Value: true
+        map:
+          Value: false
+        obstacle1/base_footprint:
+          Value: true
+        obstacle1/base_link:
+          Value: true
+        obstacle1/body:
+          Value: true
+        obstacle1/odom:
+          Value: true
+        obstacle2/base_footprint:
+          Value: true
+        obstacle2/base_link:
+          Value: true
+        obstacle2/body:
+          Value: true
+        obstacle2/odom:
+          Value: true
+        obstacle3a/base_footprint:
+          Value: true
+        obstacle3a/base_link:
+          Value: true
+        obstacle3a/body:
+          Value: true
+        obstacle3a/odom:
+          Value: true
+        obstacle3b/base_footprint:
+          Value: true
+        obstacle3b/base_link:
+          Value: true
+        obstacle3b/body:
+          Value: true
+        obstacle3b/odom:
+          Value: true
+        obstacle3c/base_footprint:
+          Value: true
+        obstacle3c/base_link:
+          Value: true
+        obstacle3c/body:
+          Value: true
+        obstacle3c/odom:
+          Value: true
+        odom:
+          Value: true
+        panel_blue:
+          Value: true
+        panel_green:
+          Value: true
+        panel_red:
+          Value: true
+        panel_yellow:
+          Value: true
+        perimeter_base_footprint:
+          Value: true
+        perimeter_base_link:
+          Value: true
+        perimeter_body1:
+          Value: true
+        perimeter_body2:
+          Value: true
+        perimeter_body3:
+          Value: true
+        perimeter_body4:
+          Value: true
+        rear_left_wheel_link:
+          Value: true
+        rear_right_wheel_link:
+          Value: true
+        road0_image:
+          Value: true
+        road0_link:
+          Value: true
+        road_base_link:
+          Value: true
+        road_base_link_body:
+          Value: true
+        roundabout1_light_image:
+          Value: true
+        roundabout1_light_link:
+          Value: true
+        roundabout1_link:
+          Value: true
+        roundabout1_tag_image:
+          Value: true
+        roundabout1_tag_link:
+          Value: true
+        roundabout2_light_image:
+          Value: true
+        roundabout2_light_link:
+          Value: true
+        roundabout2_link:
+          Value: true
+        roundabout2_tag_image:
+          Value: true
+        roundabout2_tag_link:
+          Value: true
+        semaphore_intersection1_light_image:
+          Value: true
+        semaphore_intersection1_light_link:
+          Value: true
+        semaphore_intersection1_link:
+          Value: true
+        semaphore_intersection1_tag_image:
+          Value: true
+        semaphore_intersection1_tag_link:
+          Value: true
+        semaphore_parking1_light_image:
+          Value: true
+        semaphore_parking1_light_link:
+          Value: true
+        semaphore_parking1_link:
+          Value: true
+        semaphore_parking1_tag_image:
+          Value: true
+        semaphore_parking1_tag_link:
+          Value: true
+        semaphore_parking2_light_image:
+          Value: true
+        semaphore_parking2_light_link:
+          Value: true
+        semaphore_parking2_link:
+          Value: true
+        semaphore_parking2_tag_image:
+          Value: true
+        semaphore_parking2_tag_link:
+          Value: true
+        semaphore_start1_light_image:
+          Value: true
+        semaphore_start1_light_link:
+          Value: true
+        semaphore_start1_link:
+          Value: true
+        semaphore_start1_tag_image:
+          Value: true
+        semaphore_start1_tag_link:
+          Value: true
+        semaphore_start2_light_image:
+          Value: true
+        semaphore_start2_light_link:
+          Value: true
+        semaphore_start2_link:
+          Value: true
+        semaphore_start2_tag_image:
+          Value: true
+        semaphore_start2_tag_link:
+          Value: true
+        sensor_board:
+          Value: true
+        signal_left1_light_image:
+          Value: true
+        signal_left1_light_link:
+          Value: true
+        signal_left1_link:
+          Value: true
+        signal_left1_tag_image:
+          Value: true
+        signal_left1_tag_link:
+          Value: true
+        signal_right1_light_image:
+          Value: true
+        signal_right1_light_link:
+          Value: true
+        signal_right1_link:
+          Value: true
+        signal_right1_tag_image:
+          Value: true
+        signal_right1_tag_link:
+          Value: true
+        stop1_light_image:
+          Value: true
+        stop1_light_link:
+          Value: true
+        stop1_link:
+          Value: true
+        stop1_tag_image:
+          Value: true
+        stop1_tag_link:
+          Value: true
+        top_camera:
+          Value: true
+        top_camera_optical:
+          Value: true
+        trafficlights_extra_example_base_link:
+          Value: true
+        trafficlights_fixed_base_link:
+          Value: true
+        world:
+          Value: true
+      Marker Scale: 0.25
+      Name: TF
+      Show Arrows: false
+      Show Axes: true
+      Show Names: true
+      Tree:
+        world:
+          buildings_base_link:
+            building1_link:
+              building1_body:
+                {}
+            building2_link:
+              building2_body:
+                {}
+            building3_link:
+              building3_body:
+                {}
+            building4_link:
+              building4_body:
+                {}
+            building5_link:
+              building5_body:
+                {}
+          ceiling_base_link:
+            panel_blue:
+              {}
+            panel_green:
+              {}
+            panel_red:
+              {}
+            panel_yellow:
+              {}
+          map:
+            odom:
+              base_link:
+                body:
+                  {}
+                front_left_axel_link:
+                  front_left_wheel_link:
+                    {}
+                front_right_axel_link:
+                  front_right_wheel_link:
+                    {}
+                rear_left_wheel_link:
+                  {}
+                rear_right_wheel_link:
+                  {}
+                sensor_board:
+                  camera_board:
+                    camera_link:
+                      camera_rgb_optical_frame:
+                        {}
+                    top_camera:
+                      top_camera_optical:
+                        {}
+                  imu:
+                    {}
+                  laser:
+                    {}
+          obstacle1/odom:
+            obstacle1/base_footprint:
+              obstacle1/base_link:
+                obstacle1/body:
+                  {}
+          obstacle2/odom:
+            obstacle2/base_footprint:
+              obstacle2/base_link:
+                obstacle2/body:
+                  {}
+          obstacle3a/odom:
+            obstacle3a/base_footprint:
+              obstacle3a/base_link:
+                obstacle3a/body:
+                  {}
+          obstacle3b/odom:
+            obstacle3b/base_footprint:
+              obstacle3b/base_link:
+                obstacle3b/body:
+                  {}
+          obstacle3c/odom:
+            obstacle3c/base_footprint:
+              obstacle3c/base_link:
+                obstacle3c/body:
+                  {}
+          perimeter_base_footprint:
+            perimeter_base_link:
+              perimeter_body1:
+                {}
+              perimeter_body2:
+                {}
+              perimeter_body3:
+                {}
+              perimeter_body4:
+                {}
+          road_base_link:
+            road0_link:
+              road0_image:
+                {}
+            road_base_link_body:
+              {}
+          trafficlights_extra_example_base_link:
+            roundabout1_link:
+              roundabout1_light_link:
+                roundabout1_light_image:
+                  {}
+              roundabout1_tag_link:
+                roundabout1_tag_image:
+                  {}
+            roundabout2_link:
+              roundabout2_light_link:
+                roundabout2_light_image:
+                  {}
+              roundabout2_tag_link:
+                roundabout2_tag_image:
+                  {}
+            semaphore_intersection1_link:
+              semaphore_intersection1_light_link:
+                semaphore_intersection1_light_image:
+                  {}
+              semaphore_intersection1_tag_link:
+                semaphore_intersection1_tag_image:
+                  {}
+            signal_left1_link:
+              signal_left1_light_link:
+                signal_left1_light_image:
+                  {}
+              signal_left1_tag_link:
+                signal_left1_tag_image:
+                  {}
+            signal_right1_link:
+              signal_right1_light_link:
+                signal_right1_light_image:
+                  {}
+              signal_right1_tag_link:
+                signal_right1_tag_image:
+                  {}
+            stop1_link:
+              stop1_light_link:
+                stop1_light_image:
+                  {}
+              stop1_tag_link:
+                stop1_tag_image:
+                  {}
+          trafficlights_fixed_base_link:
+            semaphore_parking1_link:
+              semaphore_parking1_light_link:
+                semaphore_parking1_light_image:
+                  {}
+              semaphore_parking1_tag_link:
+                semaphore_parking1_tag_image:
+                  {}
+            semaphore_parking2_link:
+              semaphore_parking2_light_link:
+                semaphore_parking2_light_image:
+                  {}
+              semaphore_parking2_tag_link:
+                semaphore_parking2_tag_image:
+                  {}
+            semaphore_start1_link:
+              semaphore_start1_light_link:
+                semaphore_start1_light_image:
+                  {}
+              semaphore_start1_tag_link:
+                semaphore_start1_tag_image:
+                  {}
+            semaphore_start2_link:
+              semaphore_start2_light_link:
+                semaphore_start2_light_image:
+                  {}
+              semaphore_start2_tag_link:
+                semaphore_start2_tag_image:
+                  {}
+      Update Interval: 0
+      Value: true
+    - Alpha: 0.899999976
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        camera_board:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        camera_rgb_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_left_axel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_right_axel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        imu:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        laser:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        sensor_board:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        top_camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        top_camera_optical:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: RobotModel
+      Robot Description: robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 1
+          Class: rviz/RobotModel
+          Collision Enabled: false
+          Enabled: true
+          Links:
+            All Links Enabled: true
+            Expand Joint Details: false
+            Expand Link Details: false
+            Expand Tree: false
+            Link Tree Style: Links in Alphabetic Order
+            road0_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            road0_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            road_base_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            road_base_link_body:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+          Name: RoadModel
+          Robot Description: road_description
+          TF Prefix: ""
+          Update Interval: 0
+          Value: true
+          Visual Enabled: true
+        - Alpha: 0.899999976
+          Class: rviz/RobotModel
+          Collision Enabled: false
+          Enabled: true
+          Links:
+            All Links Enabled: true
+            Expand Joint Details: false
+            Expand Link Details: false
+            Expand Tree: false
+            Link Tree Style: Links in Alphabetic Order
+            perimeter_base_footprint:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            perimeter_base_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            perimeter_body1:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            perimeter_body2:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            perimeter_body3:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            perimeter_body4:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+          Name: PerimeterModel
+          Robot Description: perimeter_description
+          TF Prefix: ""
+          Update Interval: 0
+          Value: true
+          Visual Enabled: true
+        - Alpha: 0.899999976
+          Class: rviz/RobotModel
+          Collision Enabled: false
+          Enabled: true
+          Links:
+            All Links Enabled: true
+            Expand Joint Details: false
+            Expand Link Details: false
+            Expand Tree: false
+            Link Tree Style: Links in Alphabetic Order
+            ceiling_base_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            panel_blue:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            panel_green:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            panel_red:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            panel_yellow:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+          Name: CeilingModel
+          Robot Description: ceiling_description
+          TF Prefix: ""
+          Update Interval: 0
+          Value: true
+          Visual Enabled: true
+        - Alpha: 0.899999976
+          Class: rviz/RobotModel
+          Collision Enabled: false
+          Enabled: true
+          Links:
+            All Links Enabled: true
+            Expand Joint Details: false
+            Expand Link Details: false
+            Expand Tree: false
+            Link Tree Style: Links in Alphabetic Order
+            semaphore_parking1_light_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            semaphore_parking1_light_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            semaphore_parking1_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            semaphore_parking1_tag_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            semaphore_parking1_tag_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            semaphore_parking2_light_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            semaphore_parking2_light_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            semaphore_parking2_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            semaphore_parking2_tag_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            semaphore_parking2_tag_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            semaphore_start1_light_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            semaphore_start1_light_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            semaphore_start1_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            semaphore_start1_tag_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            semaphore_start1_tag_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            semaphore_start2_light_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            semaphore_start2_light_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            semaphore_start2_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            semaphore_start2_tag_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            semaphore_start2_tag_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            trafficlights_fixed_base_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+          Name: TrafficlightsModel
+          Robot Description: trafficlights_fixed_description
+          TF Prefix: ""
+          Update Interval: 0
+          Value: true
+          Visual Enabled: true
+        - Alpha: 0.899999976
+          Class: rviz/RobotModel
+          Collision Enabled: false
+          Enabled: true
+          Links:
+            All Links Enabled: true
+            Expand Joint Details: false
+            Expand Link Details: false
+            Expand Tree: false
+            Link Tree Style: Links in Alphabetic Order
+            roundabout1_light_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            roundabout1_light_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            roundabout1_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            roundabout1_tag_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            roundabout1_tag_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            roundabout2_light_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            roundabout2_light_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            roundabout2_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            roundabout2_tag_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            roundabout2_tag_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            semaphore_intersection1_light_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            semaphore_intersection1_light_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            semaphore_intersection1_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            semaphore_intersection1_tag_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            semaphore_intersection1_tag_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            signal_left1_light_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            signal_left1_light_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            signal_left1_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            signal_left1_tag_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            signal_left1_tag_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            signal_right1_light_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            signal_right1_light_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            signal_right1_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            signal_right1_tag_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            signal_right1_tag_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            stop1_light_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            stop1_light_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            stop1_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            stop1_tag_image:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            stop1_tag_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            trafficlights_extra_example_base_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+          Name: Trafficlights2Model
+          Robot Description: trafficlights_extra_example_description
+          TF Prefix: ""
+          Update Interval: 0
+          Value: true
+          Visual Enabled: true
+        - Alpha: 0.899999976
+          Class: rviz/RobotModel
+          Collision Enabled: false
+          Enabled: true
+          Links:
+            All Links Enabled: true
+            Expand Joint Details: false
+            Expand Link Details: false
+            Expand Tree: false
+            Link Tree Style: Links in Alphabetic Order
+            building1_body:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            building1_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            building2_body:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            building2_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            building3_body:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            building3_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            building4_body:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            building4_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            building5_body:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+            building5_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            buildings_base_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+          Name: BuildingsModel
+          Robot Description: buildings_description
+          TF Prefix: ""
+          Update Interval: 0
+          Value: true
+          Visual Enabled: true
+        - Alpha: 0.899999976
+          Class: rviz/RobotModel
+          Collision Enabled: false
+          Enabled: true
+          Links:
+            All Links Enabled: true
+            Expand Joint Details: false
+            Expand Link Details: false
+            Expand Tree: false
+            Link Tree Style: Links in Alphabetic Order
+            base_footprint:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            base_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            body:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+          Name: Obstacle1Model
+          Robot Description: obstacle1_description
+          TF Prefix: obstacle1
+          Update Interval: 0
+          Value: true
+          Visual Enabled: true
+        - Alpha: 1
+          Class: rviz/RobotModel
+          Collision Enabled: false
+          Enabled: true
+          Links:
+            All Links Enabled: true
+            Expand Joint Details: false
+            Expand Link Details: false
+            Expand Tree: false
+            Link Tree Style: Links in Alphabetic Order
+            base_footprint:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            base_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            body:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+          Name: Obstacle2Model
+          Robot Description: obstacle2_description
+          TF Prefix: obstacle2
+          Update Interval: 0
+          Value: true
+          Visual Enabled: true
+        - Alpha: 1
+          Class: rviz/RobotModel
+          Collision Enabled: false
+          Enabled: true
+          Links:
+            All Links Enabled: true
+            Expand Joint Details: false
+            Expand Link Details: false
+            Expand Tree: false
+            Link Tree Style: Links in Alphabetic Order
+            base_footprint:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            base_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            body:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+          Name: Obstacle3aModel
+          Robot Description: obstacle3a_description
+          TF Prefix: obstacle3a
+          Update Interval: 0
+          Value: true
+          Visual Enabled: true
+        - Alpha: 1
+          Class: rviz/RobotModel
+          Collision Enabled: false
+          Enabled: true
+          Links:
+            All Links Enabled: true
+            Expand Joint Details: false
+            Expand Link Details: false
+            Expand Tree: false
+            Link Tree Style: Links in Alphabetic Order
+            base_footprint:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            base_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            body:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+          Name: Obstacle3bModel
+          Robot Description: obstacle3b_description
+          TF Prefix: obstacle3b
+          Update Interval: 0
+          Value: true
+          Visual Enabled: true
+        - Alpha: 1
+          Class: rviz/RobotModel
+          Collision Enabled: false
+          Enabled: true
+          Links:
+            All Links Enabled: true
+            Expand Joint Details: false
+            Expand Link Details: false
+            Expand Tree: false
+            Link Tree Style: Links in Alphabetic Order
+            base_footprint:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            base_link:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+            body:
+              Alpha: 1
+              Show Axes: false
+              Show Trail: false
+              Value: true
+          Name: Obstacle3cModel
+          Robot Description: obstacle3c_description
+          TF Prefix: obstacle3c
+          Update Interval: 0
+          Value: true
+          Visual Enabled: true
+      Enabled: true
+      Name: CircuitModels
+    - Angle Tolerance: 0.200000003
+      Class: rviz/Odometry
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 0.300000012
+          Color: 204; 51; 204
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: true
+      Keep: 100
+      Name: Odometry
+      Position Tolerance: 0.200000003
+      Shape:
+        Alpha: 1
+        Axes Length: 1
+        Axes Radius: 0.100000001
+        Color: 255; 25; 0
+        Head Length: 0.100000001
+        Head Radius: 0.100000001
+        Shaft Length: 0.25
+        Shaft Radius: 0.0500000007
+        Value: Arrow
+      Topic: /odom
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 999999
+      Min Color: 0; 0; 0
+      Min Intensity: -2.05829813e-31
+      Name: RP_Lidar
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.00999999978
+      Style: Points
+      Topic: /scan
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 2.17529988
+        Min Value: -3.23653003e-05
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: RGB8
+      Decay Time: 0
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: camera_PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 5
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.00999999978
+      Style: Points
+      Topic: /camera/depth/points
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /usb_cam/image_raw
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: top_camera_Image
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: compressed
+      Unreliable: false
+      Value: true
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /camera/rgb/image_raw
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: camera_Image
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Class: rviz/Group
+      Displays:
+        - Angle Tolerance: 0.100000001
+          Class: rviz/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: true
+            Position:
+              Alpha: 0.300000012
+              Color: 204; 51; 204
+              Scale: 1
+              Value: true
+            Value: false
+          Enabled: true
+          Keep: 1
+          Name: VisualGPSOdometry
+          Position Tolerance: 0.100000001
+          Shape:
+            Alpha: 1
+            Axes Length: 1
+            Axes Radius: 0.100000001
+            Color: 85; 85; 255
+            Head Length: 0.400000006
+            Head Radius: 0.400000006
+            Shaft Length: 1
+            Shaft Radius: 0.200000003
+            Value: Arrow
+          Topic: /iri_visual_gps/odom
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Axes Length: 1
+          Axes Radius: 0.100000001
+          Class: rviz/Pose
+          Color: 85; 255; 255
+          Enabled: true
+          Head Length: 0.5
+          Head Radius: 0.300000012
+          Name: VisualGpsPose
+          Shaft Length: 1.5
+          Shaft Radius: 0.200000003
+          Shape: Arrow
+          Topic: /iri_visual_gps/pose
+          Unreliable: false
+          Value: true
+        - Class: rviz/MarkerArray
+          Enabled: true
+          Marker Topic: /iri_visual_gps/markers
+          Name: VisualGpsMarkers
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Image
+          Enabled: false
+          Image Topic: /blob_detector_red/image_out/image_raw
+          Max Value: 1
+          Median window: 5
+          Min Value: 0
+          Name: BlobImage
+          Normalize Range: true
+          Queue Size: 2
+          Transport Hint: compressed
+          Unreliable: false
+          Value: false
+      Enabled: false
+      Name: VisualGPS
+  Enabled: true
+  Global Options:
+    Background Color: 26; 26; 26
+    Default Light: true
+    Fixed Frame: world
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Topic: /seat_car/initialpose
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 19.2443409
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.0599999987
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: -0.252488881
+        Y: -4.44192934
+        Z: -0.00389754726
+      Focal Shape Fixed Size: false
+      Focal Shape Size: 0.0500000007
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.00999999978
+      Pitch: 1.56979632
+      Target Frame: base_link
+      Value: Orbit (rviz)
+      Yaw: 3.14039445
+    Saved: ~
+Window Geometry:
+  BlobImage:
+    collapsed: false
+  Displays:
+    collapsed: false
+  Height: 817
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd00000004000000000000016a000002ebfc020000000afb0000001200530065006c0065006300740069006f006e00000000280000009b0000006100fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001f4000000fb00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c0061007900730100000028000002eb000000d700fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb000000120042006c006f00620049006d0061006700650000000279000001890000001600fffffffb0000000a0049006d0061006700650100000215000000bc00000000000000000000000100000127000002ebfc0200000008fb0000001a00630061006d006500720061005f00430061006d0065007200610000000028000000a40000000000000000fb0000001800630061006d006500720061005f0049006d00610067006501000000280000017c0000001600fffffffb000000220074006f0070005f00630061006d006500720061005f00430061006d00650072006100000000ff000001400000000000000000fb000000200074006f0070005f00630061006d006500720061005f0049006d00610067006501000001aa000001690000001600fffffffb00000024004c0069006e00650044006500740065006300740069006f006e0049006d00610067006501000001a2000000bc0000000000000000fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a0056006900650077007300000001db000000e0000000ad00fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000064f0000003efc0100000002fb0000000800540069006d006500000000000000064f0000030000fffffffb0000000800540069006d00650100000000000004500000000000000000000002d6000002eb00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1395
+  X: 65
+  Y: 24
+  camera_Image:
+    collapsed: false
+  top_camera_Image:
+    collapsed: false

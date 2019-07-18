@@ -2,14 +2,13 @@
 <package>
   <name>autominy_sim</name>
   <version>0.0.0</version>
-  <description>The seat_car_gazebo package</description>
+  <description>Autominy simulator core package.</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->
   <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
-  <maintainer email="shernand@iri.upc.edu">shernand</maintainer>
-  <maintainer email="fherrero@iri.upc.edu">fherrero</maintainer>
-
+  <maintainer email="hiyop@live.de">Marcel Schmidt</maintainer>
+  <maintainer email="buengese@gmail.com">buengese</maintainer>
 
   <!-- One license tag required, multiple allowed, one license per tag -->
   <!-- Commonly used license strings: -->
@@ -27,9 +26,8 @@
   <!-- Authors do not have to be maintianers, but could be -->
   <!-- Example: -->
   <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
-  <author email="shernand@iri.upc.edu">shernand</author>
-  <author email="fherrero@iri.upc.edu">fherrero</author>
-
+  <author email="hiyop@live.de">Marcel Schmidt</author>
+  <author email="buengese@gmail.com">buengese</author>
 
   <!-- The *_depend tags are used to specify dependencies -->
   <!-- Dependencies can be catkin packages or system dependencies -->

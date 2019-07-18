@@ -2,12 +2,13 @@
 <package format="2">
   <name>fake_odometry</name>
   <version>3.0.1</version>
-  <description>The odometry_publisher package</description>
+  <description>Publishes odometry and transform data using data optained directly from the gazebo simulation.</description>
 
-  <maintainer email="boroujeni@fu-berlin.de">Zahra Boroujeni</maintainer>
+  <maintainer email="buengese@gmai.com">buengese</maintainer>
 
   <license>BSD</license>
-  <author>Zahra Boroujeni</author>
+  <author>buengese</author>
+  
   <buildtool_depend>catkin</buildtool_depend>
   <depend>nav_msgs</depend>
   <depend>autominy_msgs</depend>

@@ -96,11 +96,6 @@ namespace autominy_sim_control
       double left_drive_cmd;
       double right_drive_cmd;
 
-      // temporary
-      double temp1;
-      double temp2;
-      double temp3;
-
       // ?
       double last_cmd_drive;
       double last_cmd_steer;

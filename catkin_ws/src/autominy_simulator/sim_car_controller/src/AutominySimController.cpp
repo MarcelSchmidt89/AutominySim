@@ -174,42 +174,29 @@ namespace autominy_sim_control
 
         // Set steering
         error = this->left_steer_cmd - steer_l_pos;
-        /*if (error < 0.05 || error > 0.05) {
-            ROS_INFO("Joint %s - zeroing error", joint_names_[4].c_str());
-        }*/
         command = pids[4]->computeCommand(error, period);
-        //ROS_INFO("Joint %s - Pos: %f, Target: %f, Command: %f", joint_names[4].c_str(), steer_l_pos, this->left_steer_cmd, command);
         this->joints[4].setCommand(command);
 
         error = this->right_steer_cmd - steer_r_pos;
-        /*if (error < 0.05 || error > 0.05) {
-            ROS_INFO("Joint %s - zeroing error", joint_names_[5].c_str());
-            error = 0;
-        }*/
         command = pids[5]->computeCommand(error, period);
-        //ROS_INFO("Joint %s - Pos: %f, Target: %f, Command: %f", joint_names[5].c_str(), steer_r_pos, this->right_steer_cmd, command);
         this->joints[5].setCommand(command);
 
 
         // Set Speed
         error = this->left_drive_cmd - drive_r_l_vel;
         command = pids[0]->computeCommand(error, period);
-        //ROS_INFO("Joint %s - SetCommand: %f", joint_names_[0].c_str(), command);
         this->joints[0].setCommand(command);
 
         error = this->right_drive_cmd - drive_r_r_vel;
         command = pids[1]->computeCommand(error, period);
-        //ROS_INFO("Joint %s - SetCommand: %f", joint_names_[1].c_str(), command);
         this->joints[1].setCommand(command);
 
         error = this->left_drive_cmd - drive_f_l_vel;
         command = pids[2]->computeCommand(error, period);
-        //ROS_INFO("Joint %s - SetCommand: %f", joint_names_[2].c_str(), command);
         this->joints[2].setCommand(command);
 
         error = this->right_drive_cmd - drive_f_r_vel;
         command = pids[3]->computeCommand(error, period);
-        //ROS_INFO("Joint %s - SetCommand: %f", joint_names_[3].c_str(), command);
         this->joints[3].setCommand(command);
 
         // Publish steer angle
@@ -219,8 +206,6 @@ namespace autominy_sim_control
         if (steer_angle_radians > 3.14159 / 2.0) {
             steer_angle_radians -= 3.14159;
         }
-
-        //ROS_INFO("Tan left: %f, Temp1: %f, Tan right: %f, Temp2: %f, cotan_steer: %f, steer_angle: %f, target_steer_angle: %f", tan(steer_l_pos), this->temp1, tan(steer_r_pos), this->temp2, cotan_steer, steer_angle_radians, this->temp3);
 
         // Publish steer angle feedback
         auto steer_angle = internal::mapRange(-0.498, 0.512, 192, 420, steer_angle_radians);
@@ -315,8 +300,6 @@ namespace autominy_sim_control
             car_angle = internal::mapRange(950, 1558, 0.512, 0, steering_command);
         else
             car_angle = internal::mapRange(2150, 1558, -0.498, 0, steering_command);
-
-        this->temp3 = car_angle;
       
         if (fabs(car_angle) > 0.001)
             curve_radius = fabs(this->axe_distance / tan(car_angle));
@@ -327,14 +310,10 @@ namespace autominy_sim_control
 
         if (car_angle > 0) {
             this->right_steer_cmd = atan2(this->axe_distance, curve_radius + this->wheel_distance / 2.0);
-            this->temp2 = (this->axe_distance / (curve_radius + this->wheel_distance / 2.0));
             this->left_steer_cmd = atan2(this->axe_distance, curve_radius - this->wheel_distance / 2.0);
-            this->temp1 = (this->axe_distance / (curve_radius - this->wheel_distance / 2.0));
         } else {
             this->right_steer_cmd = -atan2(this->axe_distance, curve_radius - this->wheel_distance / 2.0);
-            this->temp2 = (this->axe_distance / (curve_radius - this->wheel_distance / 2.0));
             this->left_steer_cmd = -atan2(this->axe_distance, curve_radius + this->wheel_distance / 2.0);
-            this->temp1 = (this->axe_distance / (curve_radius + this->wheel_distance / 2.0));
         }
 
         this->last_cmd_steer = car_angle;

@@ -97,6 +97,8 @@
 
   <link name="camera_bottom_screw_frame"/>
 
+  <link name="camera_depth_frame"/>
+
   <link name="laser">
     <visual>
       <origin rpy="0.0 0 0" xyz="0 0 -0.02"/>
@@ -326,8 +328,14 @@
     <origin xyz="0.035 0 0.03"/>
   </joint>
 
+  <joint name="camera_depth" type="fixed">
+    <parent link="camera"/>
+    <child link="camera_depth_frame"/>
+    <origin rpy="-1.57079632679 0 -1.57079632679"/>
+  </joint>
+
   <joint name="camera_joint" type="fixed">
-    <origin rpy="0 0.15 0" xyz="0.087 0 0.04"/>
+    <origin rpy="0 0 0" xyz="0.035 0 0.03"/>
     <parent link="camera_board"/>
     <child link="camera_bottom_screw_frame"/>
   </joint>
@@ -535,7 +543,7 @@
       <visualize>true</visualize>
       <update_rate>30.0</update_rate>
       <camera>
-        <pose>0 0 0 0 0.25 0</pose>
+        <pose>0 0 0 0 0.30 0</pose>
         <horizontal_fov>0.83</horizontal_fov>  
         <image>
           <width>640</width>
@@ -558,7 +566,7 @@
         <alwaysOn>true</alwaysOn>
         <updateRate>30.0</updateRate>
         <cameraName>sensors/camera</cameraName>
-        <frameName>camera</frameName>                   
+        <frameName>camera_depth_frame</frameName>                   
         <imageTopicName>color/image_rect_color</imageTopicName>
         <cameraInfoTopicName>color/camera_info</cameraInfoTopicName>
         <depthImageTopicName>depth/image_rect_raw</depthImageTopicName>
@@ -583,7 +591,7 @@
     <sensor type="camera" name="camera2">
       <update_rate>30.0</update_rate>
       <camera>
-        <pose>0 0 0 0 0.25 0</pose>
+        <pose>0 0 0 0 0.30 0</pose>
         <horizontal_fov>0.83</horizontal_fov>
         <image>
           <width>640</width>

@@ -3,7 +3,7 @@
 	<!-- nodelet -->
 	<arg name="use_nodelets"    default="$(optenv USE_NODELETS true)" />
 	<arg name="nodelet_manager" default="$(optenv NODELET_MANAGER core_nodelet_manager)" />
-	<arg name="fake_localization" default="true" doc="Whether to run the localization nodes or to use localization provided by the simulator." />
+	<arg name="fake_localization" default="false" doc="Whether to run the localization nodes or to use localization provided by the simulator." />
 
 	<!-- start recorder -->
 	<param name="use_sim_time" value="true" />

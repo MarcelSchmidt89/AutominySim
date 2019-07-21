@@ -331,8 +331,7 @@ namespace autominy_sim_control
 
         // TODO: this needs to be corrected
 
-        /* convert input data [-1000 <-> 1000] */
-        motor_voltage = (speed->value / 4.0) * 5.0 / 255.0;// cmd * pwm_max_voltage / pwm_number of steps
+        motor_voltage = (speed->value / 3.0) * 5.0 / 255.0;// cmd * pwm_max_voltage / pwm_number of steps
         motor_speed = motor_voltage * 1000.0; // motor_voltage * speed_controller conversion factor (1V <-> 1000 rev/min)
         wheel_speed = motor_speed / 5.5; // motor_speed / gear_ratio of the car
         this->linear_speed = wheel_speed * 3.14159 * this->wheel_diameter / 60.0; // rpm * radius * 2pi / 60

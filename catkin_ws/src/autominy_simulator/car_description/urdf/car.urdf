@@ -85,11 +85,13 @@
       <material name="plastic"/>
     </visual>
     <collision>
+      <origin rpy="0.0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://car_description/meshes/camera_board.dae"/>
       </geometry>
     </collision>
     <inertial>
+      <origin rpy="0.0 0 0" xyz="0 0 0"/>
       <mass value="0.1"/>
       <inertia ixx="0.00014165" ixy="0.0" ixz="0.0" iyy="0.00006758" iyz="0.0" izz="0.00020865"/>
     </inertial>
@@ -137,6 +139,31 @@
       <inertia ixx="0.00001793" ixy="0.0" ixz="0.0" iyy="0.00002867" iyz="0.0" izz="0.00001813"/>
     </inertial>
   </link>
+  <gazebo reference="wheel_fl">
+      <minDepth>0.005</minDepth>
+      <min_depth>0.005</min_depth>
+      <surface>
+        <friction>
+          <ode>
+            <mu>1.0</mu>
+            <mu2>1.0</mu2>
+            <fdir1>0 0 1</fdir1>
+            <slip1>0.0</slip1>
+            <slip2>0.0</slip2>
+          </ode>
+        </friction>
+        <contact>
+          <ode>
+            <soft_cfm>0.000000001</soft_cfm>
+            <soft_erp>0.2</soft_erp>
+            <kp>1e+10</kp>
+            <kd>10</kd>
+            <max_vel>0.01</max_vel>
+            <min_depth>0.005</min_depth>
+          </ode>
+        </contact>
+      </surface>
+  </gazebo>
 
   <link name="wheel_fr">
     <visual>
@@ -156,6 +183,31 @@
       <inertia ixx="0.00001793" ixy="0.0" ixz="0.0" iyy="0.00002867" iyz="0.0" izz="0.00001813"/>
     </inertial>
   </link>
+  <gazebo reference="wheel_fr">
+      <minDepth>0.005</minDepth>
+      <min_depth>0.005</min_depth>
+      <surface>
+        <friction>
+          <ode>
+            <mu>1.0</mu>
+            <mu2>1.0</mu2>
+            <fdir1>0 0 1</fdir1>
+            <slip1>0.0</slip1>
+            <slip2>0.0</slip2>
+          </ode>
+        </friction>
+        <contact>
+          <ode>
+            <soft_cfm>0.000000001</soft_cfm>
+            <soft_erp>0.2</soft_erp>
+            <kp>1e+10</kp>
+            <kd>10</kd>
+            <max_vel>0.01</max_vel>
+            <min_depth>0.005</min_depth>
+          </ode>
+        </contact>
+      </surface>
+  </gazebo>
 
   <link name="wheel_bl">
     <visual>
@@ -175,6 +227,31 @@
       <inertia ixx="0.00001793" ixy="0.0" ixz="0.0" iyy="0.00002867" iyz="0.0" izz="0.00001813"/>
     </inertial>
   </link>
+  <gazebo reference="wheel_bl">
+      <minDepth>0.005</minDepth>
+      <min_depth>0.005</min_depth>
+      <surface>
+        <friction>
+          <ode>
+            <mu>1.0</mu>
+            <mu2>1.0</mu2>
+            <fdir1>0 0 1</fdir1>
+            <slip1>0.0</slip1>
+            <slip2>0.0</slip2>
+          </ode>
+        </friction>
+        <contact>
+          <ode>
+            <soft_cfm>0.000000001</soft_cfm>
+            <soft_erp>0.2</soft_erp>
+            <kp>1e+10</kp>
+            <kd>10</kd>
+            <max_vel>0.01</max_vel>
+            <min_depth>0.005</min_depth>
+          </ode>
+        </contact>
+      </surface>
+  </gazebo>
 
   <link name="wheel_br">
     <visual>
@@ -185,8 +262,7 @@
       <material name="black"/>
     </visual>
     <collision>
-      <geometry>>
-
+      <geometry>
         <mesh filename="package://car_description/meshes/wheel.dae"/>
       </geometry>
     </collision>
@@ -195,6 +271,31 @@
       <inertia ixx="0.00001793" ixy="0.0" ixz="0.0" iyy="0.00002867" iyz="0.0" izz="0.00001813"/>
     </inertial>
   </link>
+  <gazebo reference="wheel_br">
+      <minDepth>0.005</minDepth>
+      <min_depth>0.005</min_depth>
+      <surface>
+        <friction>
+          <ode>
+            <mu>1.0</mu>
+            <mu2>1.0</mu2>
+            <fdir1>0 0 1</fdir1>
+            <slip1>0.0</slip1>
+            <slip2>0.0</slip2>
+          </ode>
+        </friction>
+        <contact>
+          <ode>
+            <soft_cfm>0.000000001</soft_cfm>
+            <soft_erp>0.2</soft_erp>
+            <kp>1e+10</kp>
+            <kd>10</kd>
+            <max_vel>0.01</max_vel>
+            <min_depth>0.005</min_depth>
+          </ode>
+        </contact>
+      </surface>
+  </gazebo>
 
   <link name="axis_fl">
     <visual>
@@ -309,6 +410,15 @@
       <inertia ixx="0.00000404" ixy="0.0" ixz="0.0" iyy="0.00000404" iyz="0.0" izz="0.00000001"/>
     </inertial>
   </link>
+
+  <link name="bno055">
+  </link>
+
+  <joint name="joint_board_to_bno055" type="fixed">
+      <parent link="board"/>
+      <child link="bno055"/>
+      <origin xyz="0.235 0.0 0.023" rpy="0 0 1.5708"/>
+  </joint>
 
   <joint name="base_link_board" type="fixed">
     <parent link="base_link"/>
@@ -520,7 +630,7 @@
 
   <gazebo>
     <plugin filename="libhector_gazebo_ros_imu.so" name="autominy_imu">
-      <updateRate>20.0</updateRate>
+      <updateRate>100.0</updateRate>
       <robotNamespace>/</robotNamespace>
       <bodyName>imu</bodyName>
       <frameId>imu</frameId>
@@ -544,11 +654,11 @@
       <update_rate>30.0</update_rate>
       <camera>
         <pose>0 0 0 0 0.30 0</pose>
-        <horizontal_fov>0.83</horizontal_fov>  
+        <horizontal_fov>1.59174</horizontal_fov>  
         <image>
           <width>640</width>
           <height>480</height>
-          <format>R8G8B8</format>
+          <format>L8</format>
         </image>
         <depth_camera>
         </depth_camera>
@@ -566,9 +676,9 @@
         <alwaysOn>true</alwaysOn>
         <updateRate>30.0</updateRate>
         <cameraName>sensors/camera</cameraName>
-        <frameName>camera_depth_frame</frameName>                   
-        <imageTopicName>color/image_rect_color</imageTopicName>
-        <cameraInfoTopicName>color/camera_info</cameraInfoTopicName>
+        <frameName>camera_depth_optical_frame</frameName>                   
+        <imageTopicName>infra1/image_rect_raw</imageTopicName>
+        <cameraInfoTopicName>infra1/camera_info</cameraInfoTopicName>
         <depthImageTopicName>depth/image_rect_raw</depthImageTopicName>
         <pointCloudTopicName>depth/points</pointCloudTopicName>
         <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>            
@@ -592,11 +702,11 @@
       <update_rate>30.0</update_rate>
       <camera>
         <pose>0 0 0 0 0.30 0</pose>
-        <horizontal_fov>0.83</horizontal_fov>
+        <horizontal_fov>0.7417649</horizontal_fov>
         <image>
           <width>640</width>
           <height>480</height>
-          <format>L8</format>
+          <format>R8G8B8</format>
         </image>
         <clip>
           <near>0.01</near>
@@ -611,11 +721,11 @@
       <plugin name="camera_controller2" filename="libgazebo_ros_camera.so">
         <alwaysOn>true</alwaysOn>
         <updateRate>0.0</updateRate>
-        <cameraName>sensors/camera/infra1</cameraName>
-        <imageTopicName>image_rect_raw</imageTopicName>
+        <cameraName>sensors/camera/color</cameraName>
+        <imageTopicName>image_rect_color</imageTopicName>
         <cameraInfoTopicName>camera_info</cameraInfoTopicName>
         <frameName>camera</frameName>
-        <hackBaseline>0.07</hackBaseline>
+        <hackBaseline>0.0193</hackBaseline>
         <distortionK1>0.0</distortionK1>
         <distortionK2>0.0</distortionK2>
         <distortionK3>0.0</distortionK3>
@@ -633,7 +743,7 @@
       <ray>
         <scan>
           <horizontal>
-            <samples>400</samples>
+            <samples>360</samples>
             <min_angle>-3.14159</min_angle>
             <max_angle>3.14159</max_angle>
           </horizontal>

@@ -6,7 +6,7 @@
   <arg name="world_name" default="empty"/>
   <arg name="circuit_name" default="robotics_lab"/>
   <arg name="gazebo_gui" default="True"/>
-  <arg name="fake_localization" default="false" doc="Whether to run the localization nodes or to use localization provided by the simulator." />
+  <arg name="fake_localization" default="true" doc="Whether to run the localization nodes or to use localization provided by the simulator." />
   <arg name="car_x"    default="0.189021"/>
   <arg name="car_y"    default="4.092613"/> <!--CW: -0.2, CCW: 0.2 -->
   <arg name="car_yaw"  default="-1.5708"/> <!--CW: 0.0, CCW: 3.1416 -->

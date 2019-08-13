@@ -19,9 +19,18 @@
 
   <material name="white">
     <color rgba="0.95 0.95 0.95 1"/>
-  </material>		
-  
+  </material>
+
   <link name="base_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/> 
+    </collision>
+  </link> 
+
+  <link name="chasi">
     <visual>
       <origin rpy="0.0 0 0" xyz="0 0 0.01"/>
       <geometry>
@@ -35,6 +44,10 @@
         <mesh filename="package://car_description/meshes/chasi.dae"/>
       </geometry>
     </collision>
+    <inertial>
+      <mass value="0.001"/>
+      <inertia ixx="0.00000008" ixy="0.0" ixz="0.0" iyy="0.00000008" iyz="0.0" izz="0.00000015"/>
+    </inertial>
   </link>
 
   <link name="board">
@@ -420,8 +433,14 @@
       <origin xyz="0.235 0.0 0.023" rpy="0 0 1.5708"/>
   </joint>
 
-  <joint name="base_link_board" type="fixed">
+  <joint name="base_chasi" type="fixed">
     <parent link="base_link"/>
+    <child link="chasi"/>
+    <origin xyz="0.135 0 0"/>
+  </joint>
+
+  <joint name="chasi_board" type="fixed">
+    <parent link="chasi"/>
     <child link="board"/>
     <origin xyz="-0.018 0 0.06"/>
   </joint>
@@ -471,7 +490,7 @@
   <joint name="frontwheel_steering_left" type="revolute">
     <axis xyz="0 0 1"/>
     <limit effort="1000.0" lower="-0.55" upper="0.55" velocity="2"/>
-    <parent link="base_link"/>
+    <parent link="chasi"/>
     <child link="axis_fl"/>
     <origin xyz="0.12 0.08 0.02"/>
   </joint>
@@ -479,7 +498,7 @@
   <joint name="frontwheel_steering_right" type="revolute">
     <axis xyz="0 0 1"/>
     <limit effort="1000.0" lower="-0.55" upper="0.55" velocity="2"/>
-    <parent link="base_link"/>
+    <parent link="chasi"/>
     <child link="axis_fr"/>
     <origin xyz="0.12 -0.08 0.02"/>
   </joint>
@@ -503,7 +522,7 @@
 
    <joint name="rearwheel_left" type="revolute">
     <axis xyz="0 1 0"/>
-    <parent link="base_link"/>
+    <parent link="chasi"/>
     <child link="wheel_bl"/>
     <origin xyz="-0.135 0.085 0.02"/>
     <limit effort="0.1" lower="-1000000000000.0" upper="1000000000000.0" velocity="124"/>
@@ -511,7 +530,7 @@
 
   <joint name="rearwheel_right" type="revolute">
     <axis xyz="0 1 0"/>
-    <parent link="base_link"/>
+    <parent link="chasi"/>
     <child link="wheel_br"/>
     <origin xyz="-0.135 -0.085 0.02"/>
     <limit effort="0.1" lower="-1000000000000.0" upper="1000000000000.0" velocity="124"/>

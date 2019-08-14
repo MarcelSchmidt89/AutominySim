@@ -16,7 +16,7 @@ namespace remote_control
         autominy_msgs::NormalizedSpeedCommand msg;
 		msg.value = static_cast<float>(speed);
 		msg.header.stamp = ros::Time::now();
-		m_pub_speed.publish(msg);
+		m_pub_speed.publish(msg);	
 	}
 
 	void Controller::set_steering(double steering)

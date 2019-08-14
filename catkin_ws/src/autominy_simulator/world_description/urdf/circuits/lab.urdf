@@ -20,7 +20,9 @@
       <static>1</static>
     </gazebo>
   <gazebo reference="base_link">
-    <mu1>0.8</mu1>
-    <mu2>0.8</mu2>    
+    <mu>0.09</mu>
+    <mu2>0.09</mu2>
+    <slip1>0</slip1>
+    <slip2>0</slip2>
   </gazebo>
 </robot>
